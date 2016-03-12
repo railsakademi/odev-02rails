@@ -5,8 +5,16 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<nav>
+	<ul>
+		<li ><%= link_to 'ANASAYFA', root_path %></li>
+		<li ><%= link_to 'HAKKINDA', pages_hakkinda_path %></li>
+		<li ><%= link_to 'İLETİŞİM', pages_iletisim_path %></li>
+	</ul>
+</nav>
 
 <%= yield %>
 
