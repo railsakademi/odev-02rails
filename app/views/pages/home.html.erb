@@ -1,1 +1,15 @@
-<h1>Home</h1>
+<h3 style="color:orange">Movies</h3>
+<table class="table table-bordered">
+	<tr>
+		<th>Name</th>
+		<th>Year</th>
+		<th>Director</th>
+	</tr>
+	<% @movies.each do |movie| %>
+	<tr>
+		<td><%= movie.title%></td>
+		<td><%= movie.year%></td>
+		<td><%= movie.director%></td>
+	</tr>
+	<% end %>
+</table>

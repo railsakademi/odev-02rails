@@ -2,6 +2,9 @@
 
 Bu ödev kurs boyunca tamamlayacağınız film veritabanı uygulamasının ilk parçasını içermektedir.
 
+## Project is done
+<img src="./screenshots/ss1.png">
+
 ## Yapılması Gerekenler
 
 * 3 adet statik sayfa oluşturun.(Anasayfa(/), Hakkında(/hakkinda), İletişim(/iletisim))
@@ -25,7 +28,6 @@ Bu ödev kurs boyunca tamamlayacağınız film veritabanı uygulamasının ilk p
 2. Git clone ile projeyi bilgisayarına kopyalayın.
 3. Ödevi tamamladıktan sonra kendi reponuza pushlayın.
 4. Ödevi teslim etmek için bu repoya pull-request gönderin.
-
 
 
 ## Linkler

@@ -5,7 +5,7 @@ class CreateMovies < ActiveRecord::Migration
       t.text :description
       t.string :director
       t.string :country
-      t.integer :date
+      t.integer :year
 
       t.timestamps null: false
     end
