@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root "pages#anasayfa",as: :anasayfa
+  get "/hakkimizda",to:"pages#hakkimizda",as: :hakkimizda
+  get "/iletisim",to:"pages#iletisim",as: :iletisim
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
