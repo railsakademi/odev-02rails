@@ -1,0 +1,7 @@
+<h1>Anasayfa</h1>
+<h4>List of Movies</h4>
+  <ul class="list-group">
+  <% @movies.each do |movie| %>
+    <li class="list-group-item"> <%= movie.title %> </li>
+<% end %>
+  </ul>
