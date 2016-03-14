@@ -1,0 +1,12 @@
+<h1>Movies</h1>
+<% if @movies.count == 0 %>
+<p>We do not have any movie! Come back later!</p>
+<%else%>
+  <ul>
+  <% @movies.each do |movie| %>
+    <li><%= "#{movie.title}," %></li>
+  <%end%>
+  </ul>
+<%end%>
+
+
