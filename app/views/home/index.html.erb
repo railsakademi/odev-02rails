@@ -1,0 +1,8 @@
+<h1>HOME</h1>
+<%= link_to 'About', "home/about" %>
+<%= link_to 'Contact', "home/contact" %>
+ <ul>
+   <% @movies.each do |movie| %>
+     <li><%= movie.title %></li>
+   <% end %>
+ </ul>  
