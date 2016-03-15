@@ -7,6 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<ul>
+<li><%= link_to 'Anasayfa', root_path %></li>
+<li><%= link_to 'Hakkında', hakkinda_path %></li>
+<li><%= link_to 'iletişim', iletisim_path %></li>
+</ul>
 
 <%= yield %>
 
