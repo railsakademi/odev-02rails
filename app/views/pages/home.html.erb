@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="col-md-6">
+		<table class="table table-striped">
+		<% @movies.each_with_index do |movie,index| %>
+			<tr>
+				<td> <%= index + 1 %> </td>
+				<td> <%= movie.title %> </td>
+			</tr>
+		<% end%>
+		</table>
+	</div>	
+</div>
