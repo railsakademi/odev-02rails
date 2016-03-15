@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @movies = Movie.all.select(:id, :title, :description, :image_url)
+    redirect_to movies_path, status: :see_other
   end
   def about
 

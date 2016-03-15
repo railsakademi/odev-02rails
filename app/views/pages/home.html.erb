@@ -5,18 +5,10 @@
         </div>
     </h1>
 </div>
+
 <div class="main ui container">
-    <div class="ui internally celled grid">
-    <% @movies.each do |movie| %>
-        <div class="row">
-            <div class="three wide column">
-                <img src="<%= movie.image_url %>">
-            </div>
-            <div class="thirteen wide column">
-                <h3><%= movie.title %></h3>
-                <p><%= movie.description %></p>
-            </div>
-        </div>
+    <%= link_to(movies_path, :class => "ui right labeled icon button" ) do %>
+    <i class="right arrow icon"></i>
+    Listing Movies
     <% end %>
-    </div>
 </div>
