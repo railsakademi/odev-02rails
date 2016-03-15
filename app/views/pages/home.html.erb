@@ -1,0 +1,9 @@
+<b>Anasayfa</b>
+<ul>
+<%  @movies.each do |movie|%>
+<li><%=movie.title%></li>
+<li><%=movie.description%></li>
+<li><%=movie.director%></li>
+---------------------------------------------
+<%end%>
+</ul>
