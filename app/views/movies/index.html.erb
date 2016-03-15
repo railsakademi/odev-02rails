@@ -2,11 +2,13 @@
 <% if @movies.count == 0 %>
 <p>We do not have any movie! Come back later!</p>
 <%else%>
+  <%= will_paginate %>
   <ul>
   <% @movies.each do |movie| %>
-    <li><%= "#{movie.title}," %></li>
+    <li><%= link_to movie.title, movie %></li>
   <%end%>
   </ul>
+  <%= will_paginate %>
 <%end%>
 
 
