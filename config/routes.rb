@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'anasayfa'=>'pages#home_page'
+
+  get 'hakkinda'=>'pages#about'
+
+  get 'iletisim'=>'pages#contact'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
