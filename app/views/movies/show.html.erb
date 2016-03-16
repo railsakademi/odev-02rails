@@ -1,0 +1,43 @@
+<% unless notice.nil? %>
+<div class="ui info message">
+  <i class="close icon"></i>
+  <div class="header">
+    Info
+  </div>
+  <p><%= notice %></p>
+</div>
+<% end %>
+
+<h1>Details</h1>
+<%= link_to(movies_path, :class => "ui labeled icon button teal") do %>
+    <i class="left arrow icon"></i>
+        Back
+<% end %>
+<%= link_to(edit_movie_path(@movie), :class => "ui labeled icon button teal") do %>
+    <i class="left edit icon"></i>
+        Edit
+<% end %>
+
+<div class="ui divider"></div>
+<div class="main ui container">
+    <div class="ui items">
+        <div class="item">
+            <div class="ui large rounded image">
+                <img src="<%= @movie.poster %>">
+            </div>
+            <div class="content">
+            <h2 class="header"><%= @movie.title %></h2>
+            <div class="meta">
+                <span><%= @movie.country %></span>
+                <span><%= @movie.year %></span>
+            </div>
+            <div class="description">
+                <p><%= @movie.description %></p>
+            </div>
+            <div class="extra">
+                <span><%= @movie.director %></span>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

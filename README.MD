@@ -32,3 +32,7 @@ Bu ödev kurs boyunca tamamlayacağınız film veritabanı uygulamasının ilk p
 
 1. http://guides.rubyonrails.org/active_record_basics.html
 2. http://guides.rubyonrails.org/active_record_migrations.html
+
+## Screenshot
+
+![Screenshot 1](/repo/screenshot_1.png)

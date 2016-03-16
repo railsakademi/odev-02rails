@@ -1,0 +1,48 @@
+<% unless notice.nil? %>
+<div class="ui info message">
+  <i class="close icon"></i>
+  <div class="header">
+    Info
+  </div>
+  <p><%= notice %></p>
+</div>
+<% end %>
+
+<h1>Listing Movies</h1>
+<%= link_to(new_movie_path, :class => "ui labeled icon button teal") do %>
+    <i class="left plus icon"></i>
+        New
+<% end %>
+
+<div class="ui divider"></div>
+<div class="main ui container">
+
+    <div class="ui container">
+        <div class="ui three stackable cards">
+        <% @movies.each do |movie| %>
+            <div class="ui fluid card">
+                <div class="blurring dimmable image">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <%= link_to 'Edit', edit_movie_path(movie), :class => "ui inverted button" %>
+                                <%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' }, :class => "ui inverted red button" %>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="<%= movie.poster %>">
+                </div>
+                <div class="content">
+                <%= link_to movie.title, movie, :class => "header" %>
+                <div class="meta">
+                    <span class="date">Create in <%= movie.year %></span>
+                </div>
+                <div class="description">
+                    <%= movie.description %>
+                </div>
+                </div>
+            </div>
+        <% end %>
+        </div>
+    </div>
+</div>

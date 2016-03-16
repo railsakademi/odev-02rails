@@ -1,0 +1,16 @@
+<h1>Editing Movie</h1>
+<%= link_to(movies_path, :class => "ui labeled icon button teal") do %>
+    <i class="left arrow icon"></i>
+        Back
+<% end %>
+<%= link_to(@movie, :class => "ui labeled icon button teal") do %>
+    <i class="left folder icon"></i>
+        Show
+<% end %>
+
+<div class="ui divider"></div>
+<div class="main ui container">
+
+<%= render 'form' %>
+
+</div>
