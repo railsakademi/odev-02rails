@@ -1,0 +1,18 @@
+
+<div class="row">
+  <h1>Home Page</h1>
+
+    <% @movies.each do |movie| %>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <%= image_tag(movie.title+'.jpg', :alt => movie.title) %>
+          <div class="caption">
+            <h3><%= movie.title %></h3>
+            <p><%= movie.description %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
+</div>
+
