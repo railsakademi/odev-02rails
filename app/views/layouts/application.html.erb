@@ -22,9 +22,9 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li><%= nav_link 'Home', root_path %></li>
-        <li><%= nav_link 'About Us', hakkinda_path %></li>
-        <li><%= nav_link 'Contact', iletisim_path %></li>
+        <%= active_link_to 'Home', root_path, :wrap_tag => :li %>
+        <%= active_link_to 'About Us', hakkinda_path, :wrap_tag => :li %>
+        <%= active_link_to 'Contact', iletisim_path, :wrap_tag => :li %>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
