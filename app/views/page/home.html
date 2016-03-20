@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Çakma IMDB</title>
+</head>
+<body>
+    <h1>Welcome to Çakma IMDB</h1>
+    <ul class =list-group>
+    <% @movies.each do |movie| %>
+    <li class =list-group-item> <%= movie.title %></li>
+    <% end %>
+  </ul>
+</body>
+</html>
