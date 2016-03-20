@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'anasayfa' => 'pages#anasayfa'
+  get 'hakkinda' => 'pages#hakkinda'
+  get 'iletisim'  => 'pages#iletisim'
+  root 'pages#anasayfa'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
